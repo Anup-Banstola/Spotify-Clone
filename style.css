@@ -1,0 +1,140 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+
+body{
+  background-color: antiquewhite;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  font-family: 'Ubuntu', 'sans-serif';
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 60px;
+  background-color: #222f3d;
+  color: white;
+}
+
+nav ul li{
+  padding: 0 12px;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}
+
+.brand img{
+  width: 40px;
+  padding: 0 8px;
+}
+
+
+
+.brand{
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.container {
+  min-height: 70vh;
+  background-color: beige;
+  color: white;
+  font-family: 'Varela Round','sans-serif';
+  display: flex;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 12px;
+  padding: 10px;
+  background-image: url('bg.jpg');
+  background-size: contain;
+
+  
+  
+  
+}
+
+.bottom{
+  position: sticky;
+  height: 120px;
+  background-color: #222f3d;
+  color: white;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.icons{
+  
+  cursor: pointer;
+}
+
+#my-progess-bar{
+  width: 80vw;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+}
+
+.song-item-container{
+  margin-top: 30px;
+}
+
+.songitem{
+  height: 50px;
+  display: flex;
+  background-color: white;
+  
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 6px;
+}
+
+.songitem img{
+  width: 45px;
+  margin: 0 20px;
+  border-radius: 25px;
+}
+
+.timestamp{
+  margin: 0 5px;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.song-info{
+  position: absolute;
+  left: 148px;
+  font-family: 'Varela Round','sans-serif';
+}
+
+.song-info img{
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1000px){
+  body{
+    background-color: darkgoldenrod;
+  }
+}
